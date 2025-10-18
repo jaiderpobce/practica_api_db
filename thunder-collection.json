@@ -1,0 +1,46 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "API SISCA",
+  "requests": [
+    {
+      "name": "Obtener usuarios",
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/usuarios",
+      "headers": [],
+      "body": null
+    },
+    {
+      "name": "Crear usuario",
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/usuarios",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "bodyType": "json",
+      "body": {
+        "nombre": "Ejemplo",
+        "email": "ejemplo@email.com"
+      }
+    },
+    {
+      "name": "Actualizar usuario",
+      "method": "PUT",
+      "url": "http://127.0.0.1:8000/usuarios/1",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" }
+      ],
+      "bodyType": "json",
+      "body": {
+        "nombre": "Nuevo Nombre",
+        "email": "nuevo@email.com"
+      }
+    },
+    {
+      "name": "Eliminar usuario",
+      "method": "DELETE",
+      "url": "http://127.0.0.1:8000/usuarios/1",
+      "headers": [],
+      "body": null
+    }
+  ]
+}
